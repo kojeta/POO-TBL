@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+
+
+public class Pagamento
+{
+    public virtual void ProcessarPagamento()
+    {
+        Console.WriteLine("Processando pagamento");
+    }
+}
+
+public class CartaoCredito : Pagamento
+{
+    public override void ProcessarPagamento()
+    {
+        Console.WriteLine("Processando pagamento de cartão de crédito");
+    }
+}
+
+public class BoletoBancario : Pagamento
+{
+    public override void ProcessarPagamento()
+    {
+        Console.WriteLine("Processando pagamento de boleto");
+    }
+}
+
+public class Pix : Pagamento
+{
+    public override void ProcessarPagamento()
+    {
+        Console.WriteLine("Processando pagamento via pix");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        List<Pagamento> listaPagamentos = new List<Pagamento>();
+
+        listaPagamentos.Add(new CartaoCredito());
+        listaPagamentos.Add(new BoletoBancario());
+        listaPagamentos.Add(new Pix());
+        listaPagamentos.Add(new CartaoCredito());
+
+        Console.WriteLine("Executando processo de pagamento");
+        foreach (var pagamento in listaPagamentos)
+        {
+            pagamento.ProcessarPagamento();
+        }
+    }
+}
