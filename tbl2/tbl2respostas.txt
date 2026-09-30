@@ -1,0 +1,19 @@
+1- Polimorfismo é a capacidade de uma operacão ter vários processos diferentes dependendo do objeto sendo utilizado.
+
+2- Virtual, no polimorfismo, representa o processo padrão inicial de uma operacão.
+
+3- Override é o comando utilizado quando se sobrescreve o processo padrão da operacão em questão por outro processo.
+
+4- O programa executa o método sobrescrito da classe derivada ao invés do método da classe base.
+
+5- Uma classe herda de outra classe apenas os atributos contidos nela. Enquanto a interface dita o que a classe deve fazer, herdando seus métodos.
+
+6- Porque a classe abstrata, em sua natureza, serve apenas de guia para outras classes implementáveis. 
+
+7- Um método abstrato, por pertencer a uma classe abstrata não pode ser instanciado. O método concreto nada mais é do que o mesmo método abstrato sendo implementado numa classe implementável.
+
+8- Virtual possui implementacão direta, define um processo inicial padrão para o método e sua sobrescrita é opcional. O abstract não possui implementacão, ao mesmo tempo que ela é obrigatória para suas classes derivadas.
+
+9- Pois ambos os objetos Gerente e Programador herdam da mesma classe Funcionario.
+
+10- Em sistemas maiores, onde classes precisariam repetir verificacões ou compartilhar muitos métodos e atributos com muita frequência, o polimorfismo nos permite evitar essa repeticão desnecessária de código criando cópias e guias para serem utilizadas em qualquer lugar; diminuindo o próprio código junto ao tempo para mantê-lo e escrevê-lo.
